@@ -7,4 +7,8 @@ get '/' => sub {
     template 'index' => { 'title' => 'KopkeWeb' };
 };
 
+get '/about' => sub {
+    template 'about' => { 'title' => 'KopkeWeb' };
+};
+
 true;
