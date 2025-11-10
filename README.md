@@ -8,5 +8,5 @@ plackup bin/app.psgi
 ## Docker
 ```
 docker build -t KopkeWeb .
-docler run -d -p 5000:4000 KopkeWeb .
+docker run -d -p 5000:4000 KopkeWeb .
 ```
