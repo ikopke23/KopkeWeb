@@ -3,15 +3,32 @@
 <head>
   <meta charset="<% settings.charset %>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title><% title %></title>
-  <link rel="stylesheet" href="<% request.uri_base %>/css/style.css">
+  <title><% title %></title
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   </head>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+    integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="<% request.uri_base %>/css/style.css">
 <body>
-<% navbar %>
-<% content %>
-<!-- <div id="footer">
-Powered by <a href="http://perldancer.org/">Dancer2</a> <% dancer_version %>
-</div> -->
-</body>
+<div class="col-lg-8 mx-auto p-3 py-md-5">
+  <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+    <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+      <span class="fs-4">Ian Kopke</span>
+    </a>
+  </header>
+
+  <main>
+
+    <% content %>
+
+  </main>
+  <footer id="footer" class="pt-6 my-5 text-muted border-top">
+      Created by Ian Kopke using <a target="_blank" href="https://metacpan.org/dist/Dancer2">Dancer2</a>, Version: <% version %>
+  </footer>
+</div>
+
+      
+  </body>
 </html>
