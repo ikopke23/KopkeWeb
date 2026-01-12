@@ -6,7 +6,7 @@
   <title><% title %></title>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link rel="stylesheet" href="<% request.uri_base %>/css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -36,7 +36,7 @@
   </main>
   <footer id="footer" class="pt-6 my-5 text-muted border-top">
 	Created by Ian Kopke using <a target="_blank" href="https://metacpan.org/dist/Dancer2">Dancer2</a>, Version: <% version %>
-	<a target="_blank" href="github.com/ikopke23/KopkeWeb"> Source Code </a>
+	<a target="_blank" href="https://github.com/ikopke23/KopkeWeb"> Source Code </a>
   </footer>
 
   </body>
